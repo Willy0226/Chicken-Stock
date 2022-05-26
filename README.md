@@ -1,6 +1,6 @@
 # Chicken-Stock - My Personal Website
 
-<img align="left" alt="webindex" src="webindex.png" />
+<img align="left" alt="webindex" src="img/webindex.png" />
 
 <br />
 <br />
@@ -12,10 +12,10 @@
 
 ### Crypto Knowlegde
 - index frame
-<img align="left" alt="webexample" src="webtt.png" />
+<img align="left" alt="webexample" src="img/webtt.png" />
 
 - content
-<img align="left" alt="webexample2" src="webtt2.png" />
+<img align="left" alt="webexample2" src="img/webtt2.png" />
 
 <br />
 
