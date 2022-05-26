@@ -171,16 +171,6 @@ header{
     overflow: hidden;
 }
 
-.Tutorial-img::after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.1);
-} 
-
 .Tutorial-img img{
     transition:  all 0.5s ease;
 }
@@ -199,16 +189,6 @@ header{
     padding: 0.25rem 1rem;
 }
 
-.Tutorial-img span:last-of-type{
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    right: 10px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.1rem;
-}
-
 .Tutorial-title{
     padding: 1rem;
     font-size: 1.2rem;
@@ -218,10 +198,55 @@ header{
 }
 
 .Tutorial-title a{
-    color: rgb(219, 219, 219);
+    color: #fff;
     text-decoration: none;
     text-transform: capitalize;
     font-family: var(--RedHat);
+}
+
+/* post */
+.hook{
+    padding: 4.5rem 0.6;
+}
+
+.hook-text{
+    margin: 2rem 0;
+    padding: 4.5rem 0;
+}
+
+.hook-text h2{
+    font-size: 5rem;
+    color: black;
+}
+
+.hook-text >p{
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 10rem 0 0 10; 
+    opacity: 1;
+    color: black;
+}
+
+.hook-img{
+    margin: 3rem 4rem 2rem 2rem;
+    float: left; 
+    width: 50%;
+}
+
+.post-content {
+    margin: 1rem 4rem 4rem 5rem;
+}
+
+.post-content >p{
+    font-size: 1.1rem;
+    padding: 0.6rem 0;   
+    color: rgb(0, 0, 0); 
+    font-size: 20px;
+    color: black;
+}
+.post-content >h1{
+    font-size: 30px;
+    
 }
 
 /* about */
