@@ -20,10 +20,14 @@
 <br />
 
 ### TradingView Indicator
+- index frame
+<img align="left" alt="webexample" src="img/indicators.png" />
 
+- content
+<img align="left" alt="webexample2" src="img/indi.png" />
 
 ### Crytpo News
 
 
 ### Referance
-- index refer: 
+- scroll up: https://www.youtube.com/watch?v=SJVCvnKM_lI&list=LL&index=2
