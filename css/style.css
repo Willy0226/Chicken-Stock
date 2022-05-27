@@ -34,10 +34,11 @@ img{
     padding: 0 1.2rem;
 }
 
+
 /* -------------header ----------------*/
 header{
     min-height: 100vh;
-    background: linear-gradient(rgba(222, 217, 217, 0.4), rgba(19, 19, 19, 0.4)), url(img/background.png) center/cover no-repeat fixed;
+    background: linear-gradient(rgba(222, 217, 217, 0.4), rgba(19, 19, 19, 0.4)), url(../img/background.png) center/cover no-repeat fixed;
     display: flex;
     flex-direction: column;
     justify-content: stretch;
@@ -140,12 +141,8 @@ header{
     cursor: pointer;
 } 
 
-/* ------------- Tutorial ----------------*/
-.Tutorial{
-    padding: 5rem 0;
-    background: linear-gradient(rgba(222, 217, 217, 0.4), rgba(19, 19, 19, 0.4)), url(img/background.png) center/cover no-repeat fixed;
-}
 
+/* ------------- utility class for Tutorial, Indicator and Blog ---------------- */
 .title{
     text-align: center;
     padding: 1rem 0;
@@ -159,6 +156,38 @@ header{
 .title p{
     text-transform: uppercase;
     padding: 0.6rem 0;
+}
+
+.all-button{
+    text-align: right;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.scroll-button {
+    background: rgb(226, 226, 226);
+    position: fixed;
+    bottom: 20px;
+    right:35px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    opacity:0;
+    pointer-events: none;
+    transition: all .5s;
+  }
+  
+  .scroll-button.active {
+    bottom:33px;
+    pointer-events: auto;
+    opacity:1;
+  }
+
+
+/* ------------- Tutorial ---------------- */
+.Tutorial{
+    padding: 5rem 0;
+    background: linear-gradient(rgba(222, 217, 217, 0.4), rgba(113, 113, 113, 0.4)), url(../img/background.png) center/cover no-repeat fixed;
 }
 
 .Tutorial-content{
@@ -208,7 +237,42 @@ header{
     font-family: var(--RedHat);
 }
 
-/* post */
+/* ------------- Indicator ---------------- */
+.Indicator{
+    padding: 5rem 0;
+    background: linear-gradient(rgba(222, 217, 217, 0.4), rgba(113, 113, 113, 0.4)), url(../img/background.png) center/cover no-repeat fixed;
+}
+
+.Indicator-content{
+    margin: 2rem 0;
+}
+
+.Indicator-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+
+.Indicator-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.Indicator-title{
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.Indicator-title a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: var(--RedHat);
+}
+
+/* -------------- post -------------------- */
 .hook{
     padding: 4.5rem 0.6;
 }
@@ -268,6 +332,17 @@ header{
     opacity: 0.8;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* footer */
 footer{
     background: var(--ChickenYellow);
@@ -316,25 +391,12 @@ footer{
     letter-spacing: 2px;
 }
 
-/* scroll up button*/
-.scroll-button {
-    background: rgb(226, 226, 226);
-    position: fixed;
-    bottom: 20px;
-    right:35px;
-    width:50px;
-    height:50px;
-    border-radius: 50%;
-    opacity:0;
-    pointer-events: none;
-    transition: all .5s;
-  }
-  
-  .scroll-button.active {
-    bottom:33px;
-    pointer-events: auto;
-    opacity:1;
-  }
+
+
+
+
+
+
 
 /* Media Queries */
 @media screen and (min-width: 540px){
@@ -370,7 +432,14 @@ footer{
     .Tutorial-item{
         margin: 0;
     }
-
+    .Indicator-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .Indicator-item{
+        margin: 0;
+    }
 }
 
 @media screen and (min-width: 992px){
@@ -384,6 +453,9 @@ footer{
 
 @media screen and (min-width: 1200px){
     .Tutorial-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .Indicator-content{
         grid-template-columns: repeat(3, 1fr);
     }
 }
