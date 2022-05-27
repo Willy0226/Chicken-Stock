@@ -400,11 +400,6 @@ footer{
 
 /* Media Queries */
 @media screen and (min-width: 480px){
-
-    header {
-        background-image: url(../img/background.png);
-    }
-    
     .bar-nav a{
         padding-right: 1.2rem;
         padding-left: 1.2rem;
